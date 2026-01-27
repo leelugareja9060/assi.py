@@ -1,88 +1,68 @@
-"""
-#calculate simple interest
-# Input principal, rate, and time
-principal = float(input("Enter the principal amount: "))
-rate = float(input("Enter the annual interest rate (in %): "))
-time = float(input("Enter the time (in years): "))
 
-# Calculate simple interest
-simple_interest = (principal * rate * time) / 100
-
-# Display the result
-print(f"Simple Interest = {simple_interest}")
-
-# maximum no..
+x=("Hello, world!")
+print(x)
 
 a = 10
 b = 20
+print(a + b)
+num = int(input("Enter a number: "))
 
-maximum = max(a, b)
-print(f"The maximum is {maximum}")
-
-#print 1 to 5
-
-for i in range(1, 6):
-    print(i)
-
-#find length of string
-
-text = "Python is fun!"
-length = len(text)
-print(f"The length of the string is {length}")
-
-# print a welcome massage
-
-print("Welcome to Python programming!")
-# print first character of a string
-
-text = "Python"
-print("The first character is:", text[0])
-
-#print last character of a string
-
-
-text = "Python"
-print("The last character is:", text[-1])
-#positive negative number
-
-num = float(input("Enter a number: "))
-
-# Check if the number is positive, negative, or zero
-if num > 0:
-    print("The number is positive.")
-elif num < 0:
-    print("The number is negative.")
+if num % 2 == 0:
+    print("Even number")
 else:
-    print("The number is zero.")
-    
-    
-    a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
-c = float(input("Enter third number: "))
+    print("Odd number")
+year = int(input("Enter a year: "))
 
-# Calculate the sum
-total = a + b + c
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+import math
+print(math.pi)
+PI = 3.14
+print(PI)
+num = 5
+square = num * num
+print(square)
+import math
 
-# Display the result
-print(f"The sum is {total}")
-"""
-# Take input from the user
-user_input = input("Enter something: ")
+radius = float(input("Enter the radius of the circle: "))
+area = math.pi * radius ** 2
+print("Area of the circle is:", area)
+x = 5
+print(type(x))  # <class 'int'>
 
-# Print the input
-print("You entered:", user_input)
+y = 3.14
+print(type(y))  # <class 'float'>
 
+z = "Hello, World!"
+print(type(z))  # <class 'str'>
+import math
 
+# Square root
+print(math.sqrt(16))  # 4.0
 
+# Power (x raised to y)
+print(math.pow(2, 3))  # 8.0
 
+# Pi value
+print(math.pi)  # 3.141592653589793
 
+# Trigonometric functions
+angle = 90
+# Converting angle to radians first
+radians = math.radians(angle)
+print(math.sin(radians))  # 1.0 (sine of 90 degrees)
 
+# Logarithmic functions
+print(math.log(100, 10))  # 2.0 (log base 10 of 100)
 
+# Factorial
+print(math.factorial(5))  # 120 (5! = 5*4*3*2*1)
 
-
-
-
-
-
-
-
+# Absolute value
+print(math.fabs(-7))  # 7.0 (absolute value)
+a = 5
+b = 5
+result = a ** b
+print(result)
